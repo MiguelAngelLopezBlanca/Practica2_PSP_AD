@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/amigosRecyclerView">
+
+    <fragment
+        android:id="@+id/contactosRecyclerView"
+        android:name="miguelangellopezblanca.psp.practica2_psp_ad.view.fragment.ContactosRecyclerView"
+        android:label="fragment_contactos_recycler_view"
+        tools:layout="@layout/fragment_contactos_recycler_view" />
+    <fragment
+        android:id="@+id/amigosRecyclerView"
+        android:name="miguelangellopezblanca.psp.practica2_psp_ad.view.fragment.AmigosRecyclerView"
+        android:label="fragment_amigos_recycler_view"
+        tools:layout="@layout/fragment_amigos_recycler_view" >
+        <action
+            android:id="@+id/action_amigosRecyclerView_to_contactosRecyclerView"
+            app:destination="@id/contactosRecyclerView" />
+        <action
+            android:id="@+id/action_amigosRecyclerView_to_friendsFragment"
+            app:destination="@id/friendsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendsFragment"
+        android:name="miguelangellopezblanca.psp.practica2_psp_ad.view.fragment.FriendsFragment"
+        android:label="fragment_friends"
+        tools:layout="@layout/fragment_friends" />
+</navigation>

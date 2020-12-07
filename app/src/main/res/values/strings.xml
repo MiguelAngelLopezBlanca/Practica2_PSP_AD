@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Practica2_PSP_AD</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_contact">Obtener Contactos</string>
+    <string name="textview_addAmigo">¿Es este tu amigo?</string>
+    <string name="button_actualizar">Actualizar</string>
+    <string name="button_borrar">Borrar</string>
+</resources>
